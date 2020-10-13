@@ -41,7 +41,7 @@ function decode(expr) {
     // write your solution here
     let str = '';
 	
-	for (let j = 0; j <= expr.length; j++) {
+	for (let j = expr.length; j > 0; j--) {
 		let tempStr = expr.slice(0, 10);
 		let tempSymbols = '';
 		let morseSymbols = '';
