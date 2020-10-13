@@ -38,7 +38,6 @@ const MORSE_TABLE = {
 };
 
 function decode(expr) {
-    // write your solution here
     let str = '';
 	
 	for (let j = expr.length; j > 0; j--) {
@@ -65,9 +64,7 @@ function decode(expr) {
 		
 		if (morseSymbols) {
 			str += MORSE_TABLE[morseSymbols];
-		}
-		
-		
+		}		
 		
 		expr = expr.slice(10);
     }
